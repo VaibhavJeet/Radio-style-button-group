@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20%;
+    display: flex;
+}
+
+.radio {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.radioInput {
+    display: none;
+
+}
+
+.radioLabel {
+    padding: 15px 24px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    background: #377DFF;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+.leftbtn {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rightbtn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.radioInput:checked+.radioLabel {
+    background: #2968df;
+}
